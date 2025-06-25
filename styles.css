@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f2fe;
+    color: #1e3a8a;
+}
+
+.invitation-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 5px solid #bae6fd;
+    border-radius: 10px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+}
+
+.graduation-image {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.graduation-icon {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    animation: bounce 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    color: #1e40af;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    font-family: 'Lobster', cursive;
+    font-size: 2.2em;
+    color: #3b82f6;
+}
+
+h2 {
+    margin: 20px 0;
+    font-size: 1.2em;
+    color: #1e3a8a;
+}
+
+.tên {
+    font-size: 1.5em;
+    color: #3b82f6;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.friends {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #1e3a8a;
+    background-color: #e0f2fe;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: #1e3a8a;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.info-section {
+    background-color: #f0f9ff;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 3s ease-in-out;
+}
+
+.info-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.info-section p {
+    text-align: center;
+    font-size: 1em;
+    margin: 5px 0;
+    line-height: 1.5;
+    color: #1e3a8a;
+}
+
+.footer {
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.scroll-animation {
+    overflow: hidden;
+    height: 40px;
+}
+
+.scroll-text {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2563eb;
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
